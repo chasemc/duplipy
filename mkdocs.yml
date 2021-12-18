@@ -1,19 +1,20 @@
 site_name: electricpie Documentation
 site_url: https://chasemc.github.io/electricpie
 nav:
-    - Home: README.md
-    - "User Guide":
-          - "Installation": "userguide/installation.md"
-          - "Quickstart": "userguide/quickstart.md"
-    - "Contributing":
-          - "Setup Local Environment": "developing/setup.md"
+  - Home: README.md
+  - "User Guide":
+      - "Installation": "userguide/installation.md"
+      - "Quickstart": "userguide/quickstart.md"
+      - "Walkthrough": "jupyter/overview.ipynb"
+  - "Contributing":
+      - "Setup Local Environment": "developing/setup.md"
 plugins:
-    - mkdocs-jupyter:
-          execute: True
-          kernel_name: python3
+  - mkdocs-jupyter:
+      execute: False
+      kernel_name: python3
 
 theme:
-    name: material
+  name: material
 
 extra_css:
-    - stylesheets/extra.css
+  - stylesheets/extra.css
