@@ -1,1 +1,1 @@
-# electricpie Documentation
+# electricpy Documentation

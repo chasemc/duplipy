@@ -1,5 +1,5 @@
 
-from electricpie.cli import main
+from electricpy.cli import main
 
 
 def test_main():

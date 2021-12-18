@@ -3,11 +3,11 @@ from shlex import quote
 
 from packaging import version
 
-from electricpie.classes.conda import CondaEnvs
-from electricpie.utils.run_command import run_command
+from electricpy.classes.conda import CondaEnvs
+from electricpy.utils.run_command import run_command
 
 
-class Electricpie(CondaEnvs):
+class electricpy(CondaEnvs):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.renv_project_directory = self.workdir

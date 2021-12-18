@@ -1,5 +1,5 @@
-site_name: electricpie Documentation
-site_url: https://chasemc.github.io/electricpie
+site_name: electricpy Documentation
+site_url: https://chasemc.github.io/electricpy
 nav:
   - Home: README.md
   - "User Guide":

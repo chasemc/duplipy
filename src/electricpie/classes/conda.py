@@ -13,10 +13,10 @@ from rich import inspect
 from rich import print
 
 # internal dependencies
-from electricpie.classes.operating_system import OperatingSystem
-from electricpie.classes.workingdir import WorkingDir
-from electricpie.utils.downloader import download
-from electricpie.utils.run_command import run_command
+from electricpy.classes.operating_system import OperatingSystem
+from electricpy.classes.paths_setup import WorkingDir
+from electricpy.utils.downloader import download
+from electricpy.utils.run_command import run_command
 
 
 class Conda(WorkingDir, OperatingSystem):
@@ -25,6 +25,10 @@ class Conda(WorkingDir, OperatingSystem):
         self.conda_installer_script_path = None
         self.conda_topdir = None
         self.conda_executable = None
+
+    def reload_dir(self):
+        self.workdir
+
 
     def download_miniconda3(
         self,

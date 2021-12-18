@@ -14,33 +14,33 @@ Overview
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
 
-.. |github-actions| image:: https://github.com/chasemc/electricpie/actions/workflows/github-actions.yml/badge.svg
+.. |github-actions| image:: https://github.com/chasemc/electricpy/actions/workflows/github-actions.yml/badge.svg
     :alt: GitHub Actions Build Status
-    :target: https://github.com/chasemc/electricpie/actions
+    :target: https://github.com/chasemc/electricpy/actions
 
-.. |codecov| image:: https://codecov.io/gh/chasemc/electricpie/branch/main/graphs/badge.svg?branch=main
+.. |codecov| image:: https://codecov.io/gh/chasemc/electricpy/branch/main/graphs/badge.svg?branch=main
     :alt: Coverage Status
-    :target: https://codecov.io/github/chasemc/electricpie
+    :target: https://codecov.io/github/chasemc/electricpy
 
-.. |version| image:: https://img.shields.io/pypi/v/electricpie.svg
+.. |version| image:: https://img.shields.io/pypi/v/electricpy.svg
     :alt: PyPI Package latest release
-    :target: https://pypi.org/project/electricpie
+    :target: https://pypi.org/project/electricpy
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/electricpie.svg
+.. |wheel| image:: https://img.shields.io/pypi/wheel/electricpy.svg
     :alt: PyPI Wheel
-    :target: https://pypi.org/project/electricpie
+    :target: https://pypi.org/project/electricpy
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/electricpie.svg
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/electricpy.svg
     :alt: Supported versions
-    :target: https://pypi.org/project/electricpie
+    :target: https://pypi.org/project/electricpy
 
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/electricpie.svg
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/electricpy.svg
     :alt: Supported implementations
-    :target: https://pypi.org/project/electricpie
+    :target: https://pypi.org/project/electricpy
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/chasemc/electricpie/v0.0.0.svg
+.. |commits-since| image:: https://img.shields.io/github/commits-since/chasemc/electricpy/v0.0.0.svg
     :alt: Commits since latest release
-    :target: https://github.com/chasemc/electricpie/compare/v0.0.0...main
+    :target: https://github.com/chasemc/electricpy/compare/v0.0.0...main
 
 
 
@@ -55,11 +55,11 @@ Installation
 
 ::
 
-    pip install electricpie
+    pip install electricpy
 
 You can also install the in-development version with::
 
-    pip install https://github.com/chasemc/electricpie/archive/main.zip
+    pip install https://github.com/chasemc/electricpy/archive/main.zip
 
 
 Documentation
@@ -70,8 +70,8 @@ To use the project:
 
 .. code-block:: python
 
-    import electricpie
-    electricpie.longest()
+    import electricpy
+    electricpy.longest()
 
 
 Development

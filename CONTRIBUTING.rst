@@ -8,7 +8,7 @@ little bit helps, and credit will always be given.
 Bug reports
 ===========
 
-When `reporting a bug <https://github.com/chasemc/electricpie/issues>`_ please include:
+When `reporting a bug <https://github.com/chasemc/electricpy/issues>`_ please include:
 
     * Your operating system name and version.
     * Any details about your local setup that might be helpful in troubleshooting.
@@ -17,14 +17,14 @@ When `reporting a bug <https://github.com/chasemc/electricpie/issues>`_ please i
 Documentation improvements
 ==========================
 
-electricpie could always use more documentation, whether as part of the
-official electricpie docs, in docstrings, or even on the web in blog posts,
+electricpy could always use more documentation, whether as part of the
+official electricpy docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Feature requests and feedback
 =============================
 
-The best way to send feedback is to file an issue at https://github.com/chasemc/electricpie/issues.
+The best way to send feedback is to file an issue at https://github.com/chasemc/electricpy/issues.
 
 If you are proposing a feature:
 
@@ -35,13 +35,13 @@ If you are proposing a feature:
 Development
 ===========
 
-To set up `electricpie` for local development:
+To set up `electricpy` for local development:
 
-1. Fork `electricpie <https://github.com/chasemc/electricpie>`_
+1. Fork `electricpy <https://github.com/chasemc/electricpy>`_
    (look for the "Fork" button).
 2. Clone your fork locally::
 
-    git clone git@github.com:YOURGITHUBNAME/electricpie.git
+    git clone git@github.com:YOURGITHUBNAME/electricpy.git
 
 3. Create a branch for local development::
 

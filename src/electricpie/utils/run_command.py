@@ -4,7 +4,7 @@ from sys import platform
 from typing import List
 
 # internal dependencies
-from electricpie.utils.logging_handler import log
+from electricpy.utils.logging_handler import log
 
 
 def check_os(

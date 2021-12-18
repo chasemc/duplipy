@@ -1,4 +1,4 @@
-"""Top-level package for electricpie."""
+"""Top-level package for electricpy."""
 
 __author__ = """Chase M Clark"""
 __email__ = "chasingmicrobes@gmail.com"

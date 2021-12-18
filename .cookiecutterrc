@@ -5,14 +5,14 @@
 # automatically for any template). To use it:
 #
 #    pip install cookiepatcher
-#    cookiepatcher gh:ionelmc/cookiecutter-pylibrary electricpie
+#    cookiepatcher gh:ionelmc/cookiecutter-pylibrary electricpy
 #
 # See:
 #    https://pypi.org/project/cookiepatcher
 #
 # Alternatively, you can run:
 #
-#    cookiecutter --overwrite-if-exists --config-file=electricpie/.cookiecutterrc gh:ionelmc/cookiecutter-pylibrary
+#    cookiecutter --overwrite-if-exists --config-file=electricpy/.cookiecutterrc gh:ionelmc/cookiecutter-pylibrary
 
 default_context:
 
@@ -21,28 +21,28 @@ default_context:
     allow_tests_inside_package: 'yes'
     appveyor:                  'no'
     c_extension_function:      'longest'
-    c_extension_module:        '_electricpie'
+    c_extension_module:        '_electricpy'
     c_extension_optional:      'no'
     c_extension_support:       'no'
     c_extension_test_pypi:     'no'
     c_extension_test_pypi_username: 'chasemc'
     codacy:                    'no'
-    codacy_projectid:          '[Get ID from https://app.codacy.com/gh/chasemc/electricpie/settings]'
+    codacy_projectid:          '[Get ID from https://app.codacy.com/gh/chasemc/electricpy/settings]'
     codeclimate:               'no'
     codecov:                   'yes'
     command_line_interface:    'argparse'
-    command_line_interface_bin_name: 'electricpie'
+    command_line_interface_bin_name: 'electricpy'
     coveralls:                 'no'
-    distribution_name:         'electricpie'
+    distribution_name:         'electricpy'
     email:                     'chasingmicrobes@gmail.com'
     full_name:                 'Chase M Clark'
     github_actions:            'yes'
     legacy_python:             'no'
     license:                   'MIT license'
     linter:                    'flake8'
-    package_name:              'electricpie'
+    package_name:              'electricpy'
     pre_commit:                'yes'
-    project_name:              'electricpie'
+    project_name:              'electricpy'
     project_short_description: 'Create standalone, installable R Shiny apps using Electron'
     pypi_badge:                'yes'
     pypi_disable_upload:       'no'
@@ -50,14 +50,14 @@ default_context:
     repo_hosting:              'github.com'
     repo_hosting_domain:       'github.com'
     repo_main_branch:          'main'
-    repo_name:                 'electricpie'
+    repo_name:                 'electricpy'
     repo_username:             'chasemc'
     requiresio:                'no'
     scrutinizer:               'no'
     setup_py_uses_setuptools_scm: 'no'
     setup_py_uses_test_runner: 'yes'
     sphinx_docs:               'no'
-    sphinx_docs_hosting:       'https://electricpie.readthedocs.io/'
+    sphinx_docs_hosting:       'https://electricpy.readthedocs.io/'
     sphinx_doctest:            'no'
     sphinx_theme:              'sphinx-rtd-theme'
     test_matrix_configurator:  'yes'
