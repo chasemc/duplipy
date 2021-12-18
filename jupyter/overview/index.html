@@ -15,7 +15,7 @@
     
     
       
-        <title>Install all dependencies on user-side - electricpie Documentation</title>
+        <title>Walkthrough - electricpie Documentation</title>
       
     
     
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Install all dependencies on user-side
+              Walkthrough
             
           </span>
         </div>
@@ -225,12 +225,39 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Walkthrough
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Install all dependencies on user-side
+        Walkthrough
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-all-dependencies-on-user-side" class="md-nav__link">
+    Install all dependencies on user-side
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -308,8 +335,21 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-all-dependencies-on-user-side" class="md-nav__link">
+    Install all dependencies on user-side
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -321,6 +361,8 @@
             <article class="md-content__inner md-typeset">
               
                 
+
+  <h1>Walkthrough</h1>
 
 <script>
 (function (global, factory) {
@@ -482,33 +524,6 @@
           notice.hidden = true
         }, 1000)
       })
-</script><script>
-(function() {
-  function addWidgetsRenderer() {
-    var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
-    var scriptElement = document.createElement('script');
-    
-    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
-    
-    var widgetState;
-
-    // Fallback for older version:
-    try {
-      widgetState = mimeElement && JSON.parse(mimeElement.innerHTML);
-
-      if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
-        
-        var widgetRendererSrc = 'https://unpkg.com/@jupyter-js-widgets@*/dist/embed.js';
-        
-      }
-    } catch(e) {}
-
-    scriptElement.src = widgetRendererSrc;
-    document.body.appendChild(scriptElement);
-  }
-
-  document.addEventListener('DOMContentLoaded', addWidgetsRenderer);
-}());
 </script>
 
 
@@ -1016,7 +1031,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1055,7 +1070,7 @@ from pathlib import Path</div>
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1086,11 +1101,11 @@ from pathlib import Path</div>
 <p>Make new instance of the <code>Electricpie</code> class and provide an <strong>empty</strong> working directory. If left blank (e.g. <code>my_object = Electricpie()</code>) the working directory will be set to whichever temporary directory Python chooses (using <code>tempfile.TemporaryDirectory()</code>).</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1114,30 +1129,6 @@ from pathlib import Path</div>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[14:52:42] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> Operating system: linux                            <a href="file:///home/chase/Documents/electricpie/src/electricpie/classes/operating_system.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">operating_system.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/classes/operating_system.py#31"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">31</span></a>
-</pre>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -1145,11 +1136,11 @@ from pathlib import Path</div>
 <p>Download and install miniconda into the working directory using the following commands</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1175,191 +1166,6 @@ my_object.install_miniconda()</div>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="b96503ca-77d4-4022-8072-c1cdab5038d5" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('b96503ca-77d4-4022-8072-c1cdab5038d5');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "613f29c9222f47158859d98bf7b601b4"}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[14:52:42] </span>Requesting <span style="color: #0000ff; text-decoration-color: #0000ff; text-decoration: underline">https://repo.anaconda.com/miniconda/Miniconda3-latest-</span> <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/downloader.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">downloader.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/downloader.py#68"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">68</span></a>
-           <span style="color: #0000ff; text-decoration-color: #0000ff; text-decoration: underline">Linux-x86_64.sh</span>                                                                   
-</pre>
-
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[14:52:48] </span>Downloaded                                                        <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/downloader.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">downloader.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/downloader.py#79"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">79</span></a>
-           <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">Miniconda3-latest-Linux-x86_64.sh</span>                      
-</pre>
-
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"></pre>
-
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-</pre>
-
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[14:52:48] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">Miniconda3-latest-Linux-x86_</span> <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#32"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">32</span></a>
-                    <span style="color: #ff00ff; text-decoration-color: #ff00ff">64.sh</span> -bup <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda_topdir</span>                       
-</pre>
-
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>                                                                                                    </pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[14:52:56] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #808000; text-decoration-color: #808000">PREFIX</span>=<span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda_topdir</span>          <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#34"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">34</span></a>
-                    Unpacking payload <span style="color: #808000; text-decoration-color: #808000">...</span>                                                    
-                    Collecting package metadata <span style="font-weight: bold">(</span>current_repodata.json<span style="font-weight: bold">)</span>:                     
-                    <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                                       
-                    Solving environment: <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                  
-                                                                                             
-                    # All requested packages already installed.                              
-                                                                                             
-                    installation finished.                                                   
-                                                                                             
-</pre>
-
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #000080; text-decoration-color: #000080">╭────────────────── </span><span style="color: #000080; text-decoration-color: #000080; font-weight: bold">&lt;</span><span style="color: #ff00ff; text-decoration-color: #ff00ff; font-weight: bold">class</span><span style="color: #000000; text-decoration-color: #000000"> </span><span style="color: #008000; text-decoration-color: #008000">'electricpie.classes.electricpie.Electricpie'</span><span style="color: #000080; text-decoration-color: #000080; font-weight: bold">&gt;</span><span style="color: #000080; text-decoration-color: #000080"> ──────────────────╮</span>
-<span style="color: #000080; text-decoration-color: #000080">│</span> <span style="color: #008000; text-decoration-color: #008000">╭───────────────────────────────────────────────────────────────────────────────────────╮</span> <span style="color: #000080; text-decoration-color: #000080">│</span>
-<span style="color: #000080; text-decoration-color: #000080">│</span> <span style="color: #008000; text-decoration-color: #008000">│</span> <span style="font-weight: bold">&lt;</span><span style="color: #ff00ff; text-decoration-color: #ff00ff; font-weight: bold">electricpie.classes.electricpie.Electricpie</span><span style="color: #000000; text-decoration-color: #000000"> object at </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0x7f6ee6d67640</span><span style="font-weight: bold">&gt;</span>                <span style="color: #008000; text-decoration-color: #008000">│</span> <span style="color: #000080; text-decoration-color: #000080">│</span>
-<span style="color: #000080; text-decoration-color: #000080">│</span> <span style="color: #008000; text-decoration-color: #008000">╰───────────────────────────────────────────────────────────────────────────────────────╯</span> <span style="color: #000080; text-decoration-color: #000080">│</span>
-<span style="color: #000080; text-decoration-color: #000080">│</span>                                                                                           <span style="color: #000080; text-decoration-color: #000080">│</span>
-<span style="color: #000080; text-decoration-color: #000080">│</span>            <span style="color: #808000; text-decoration-color: #808000; font-style: italic">conda_executable</span> = <span style="color: #008000; text-decoration-color: #008000">'/home/chase/Downloads/temp/conda_topdir/bin/conda'</span>         <span style="color: #000080; text-decoration-color: #000080">│</span>
-<span style="color: #000080; text-decoration-color: #000080">│</span> <span style="color: #808000; text-decoration-color: #808000; font-style: italic">conda_installer_script_path</span> = <span style="color: #008000; text-decoration-color: #008000">'/home/chase/Downloads/temp/Miniconda3-latest-Linux-x86_64…</span> <span style="color: #000080; text-decoration-color: #000080">│</span>
-<span style="color: #000080; text-decoration-color: #000080">│</span>                <span style="color: #808000; text-decoration-color: #808000; font-style: italic">conda_topdir</span> = <span style="color: #800080; text-decoration-color: #800080; font-weight: bold">PosixPath</span><span style="font-weight: bold">(</span><span style="color: #008000; text-decoration-color: #008000">'/home/chase/Downloads/temp/conda_topdir'</span><span style="font-weight: bold">)</span>        <span style="color: #000080; text-decoration-color: #000080">│</span>
-<span style="color: #000080; text-decoration-color: #000080">│</span>                <span style="color: #808000; text-decoration-color: #808000; font-style: italic">environments</span> = <span style="font-weight: bold">{}</span>                                                          <span style="color: #000080; text-decoration-color: #000080">│</span>
-<span style="color: #000080; text-decoration-color: #000080">│</span>      <span style="color: #808000; text-decoration-color: #808000; font-style: italic">renv_project_directory</span> = <span style="color: #008000; text-decoration-color: #008000">'/home/chase/Downloads/temp'</span>                                <span style="color: #000080; text-decoration-color: #000080">│</span>
-<span style="color: #000080; text-decoration-color: #000080">│</span>       <span style="color: #808000; text-decoration-color: #808000; font-style: italic">this_operating_system</span> = <span style="color: #008000; text-decoration-color: #008000">'linux'</span>                                                     <span style="color: #000080; text-decoration-color: #000080">│</span>
-<span style="color: #000080; text-decoration-color: #000080">│</span>                     <span style="color: #808000; text-decoration-color: #808000; font-style: italic">workdir</span> = <span style="color: #008000; text-decoration-color: #008000">'/home/chase/Downloads/temp'</span>                                <span style="color: #000080; text-decoration-color: #000080">│</span>
-<span style="color: #000080; text-decoration-color: #000080">╰───────────────────────────────────────────────────────────────────────────────────────────╯</span>
-</pre>
-
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080; font-style: italic">None</span>
-</pre>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -1367,11 +1173,11 @@ var element = document.getElementById('b96503ca-77d4-4022-8072-c1cdab5038d5');
 <p>Create a conda environment for the Shiny app</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1395,91 +1201,6 @@ var element = document.getElementById('b96503ca-77d4-4022-8072-c1cdab5038d5');
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">           </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span>       <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#32"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">32</span></a>
-                    create -n eshine -y                                                      
-</pre>
-
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-
-==&gt; WARNING: A newer version of conda exists. &lt;==
-  current version: 4.10.3
-  latest version: 4.11.0
-
-Please update conda by running
-
-    $ conda update -n base -c defaults conda
-
-
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[14:52:58] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> Collecting package metadata <span style="font-weight: bold">(</span>current_repodata.json<span style="font-weight: bold">)</span>:    <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#34"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">34</span></a>
-                    <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                                       
-                    Solving environment: <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                  
-                                                                                             
-                    ## Package Plan ##                                                       
-                                                                                             
-                      environment location:                                                  
-                    <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/envs/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">eshine</span>                      
-                                                                                             
-                                                                                             
-                                                                                             
-                    Preparing transaction: <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                
-                    Verifying transaction: <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                
-                    Executing transaction: <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                
-                    #                                                                        
-                    # To activate this environment, use                                      
-                    #                                                                        
-                    #     $ conda activate eshine                                            
-                    #                                                                        
-                    # To deactivate an active environment, use                               
-                    #                                                                        
-                    #     $ conda deactivate                                                 
-                                                                                             
-                                                                                             
-</pre>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -1487,11 +1208,11 @@ Please update conda by running
 <p>Install R into that conda environment</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1515,303 +1236,6 @@ Please update conda by running
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">           </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span>       <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#32"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">32</span></a>
-                    install --name eshine --channel conda-forge                              
-                    r-<span style="color: #808000; text-decoration-color: #808000">base</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span> -y                                                          
-</pre>
-
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-
-==&gt; WARNING: A newer version of conda exists. &lt;==
-  current version: 4.10.3
-  latest version: 4.11.0
-
-Please update conda by running
-
-    $ conda update -n base -c defaults conda
-
-
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[14:53:26] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> Collecting package metadata <span style="font-weight: bold">(</span>current_repodata.json<span style="font-weight: bold">)</span>:    <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#34"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">34</span></a>
-                    <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                                       
-                    Solving environment: <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> failed with initial                   
-                    frozen solve. Retrying with flexible solve.                              
-                    Collecting package metadata <span style="font-weight: bold">(</span>repodata.json<span style="font-weight: bold">)</span>:                             
-                    <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                                       
-                    Solving environment: <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                  
-                                                                                             
-                    ## Package Plan ##                                                       
-                                                                                             
-                      environment location:                                                  
-                    <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/envs/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">eshine</span>                      
-                                                                                             
-                      added <span style="color: #800080; text-decoration-color: #800080">/</span> updated specs:                                                 
-                        - r-<span style="color: #808000; text-decoration-color: #808000">base</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>                                                       
-                                                                                             
-                                                                                             
-                    The following packages will be downloaded:                               
-                                                                                             
-                        package                    |            build                        
-                        ---------------------------|-----------------                        
-                        _openmp_mutex-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.5</span>          |            1_gnu                        
-                    <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">22</span> KB  conda-forge                                                       
-                        ---------------------------------------------------                  
-                    ---------                                                                
-                                                               Total:                        
-                    <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">22</span> KB                                                                    
-                                                                                             
-                    The following NEW packages will be INSTALLED:                            
-                                                                                             
-                      _libgcc_mutex                                                          
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::_libgcc_mutex-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.1</span>-conda_forge                      
-                      _openmp_mutex                                                          
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::_openmp_mutex-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.5</span>-1_gnu                            
-                      _r-mutex                                                               
-                    conda-forge/noarch::_r-mutex-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-anacondar_1                           
-                      binutils_impl_lin~ conda-forge/linux-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">64::b</span>inutils_imp                  
-                    l_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.36</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-h193b22a_2                                             
-                      binutils_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>  conda-forge/linux-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">64::b</span>inutils_lin                  
-                    ux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.36</span>-hf3e587d_33                                                   
-                      bwidget                                                                
-                    conda-forge/linux-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">64::b</span>widget-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.9</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">14</span>-ha770c72_1                          
-                      bzip2                                                                  
-                    conda-forge/linux-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">64::b</span>zip2-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">8</span>-h7f98852_4                             
-                      c-ares                                                                 
-                    conda-forge/linux-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">64::c</span>-ares-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.18</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-h7f98852_0                           
-                      ca-certificates    conda-forge/linux-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">64::ca</span>-certifica                  
-                    tes-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2021.10</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">8</span>-ha878542_0                                                 
-                      cairo                                                                  
-                    conda-forge/linux-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">64::ca</span>iro-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.16</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-hcf35c78_1003                         
-                      curl                                                                   
-                    conda-forge/linux-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">64::c</span>url-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.76</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-h979ede3_1                             
-                      fontconfig                                                             
-                    conda-forge/linux-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">64::f</span>ontconfig-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.13</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-hba837de_1005                    
-                      freetype                                                               
-                    conda-forge/linux-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">64::f</span>reetype-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.10</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span>-h0708190_1                         
-                      fribidi                                                                
-                    conda-forge/linux-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">64::f</span>ribidi-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">10</span>-h36c2ea0_0                          
-                      gcc_impl_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>  conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::gcc_impl_lin                  
-                    ux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-habd7529_19                                                  
-                      gcc_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>                                                           
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::gcc_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h47867f9_33                     
-                      gettext                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::gettext-<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">0.19.8.1</span>-h73d1719_1008                     
-                      gfortran_impl_lin~ conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::gfortran_imp                  
-                    l_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h56cb351_19                                             
-                      gfortran_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>  conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::gfortran_lin                  
-                    ux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h78c8a43_33                                                  
-                      glib                                                                   
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::glib-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.70</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span>-h780b84a_0                             
-                      glib-tools                                                             
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::glib-tools-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.70</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span>-h780b84a_0                       
-                      graphite2                                                              
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::graphite2-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.3</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">13</span>-h58526e2_1001                     
-                      gsl                                                                    
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::gsl-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.6</span>-he838d99_2                                 
-                      gxx_impl_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>  conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::gxx_impl_lin                  
-                    ux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-hd0bb8aa_19                                                  
-                      gxx_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>                                                           
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::gxx_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h555fc39_33                     
-                      harfbuzz                                                               
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::harfbuzz-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.4</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h9f30f68_3                          
-                      icu                                                                    
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::icu-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64.2</span>-he1b5a44_1                                
-                      jbig                                                                   
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::jbig-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.1</span>-h7f98852_2003                             
-                      jpeg                                                                   
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::jpeg-9d-h36c2ea0_0                                 
-                      kernel-headers_li~ conda-forge/noarch::kernel-headers                  
-                    _linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.6</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">32</span>-he073ed8_15                                             
-                      krb5                                                                   
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::krb5-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.17</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span>-h926e7f8_0                             
-                      ld_impl_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>   conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::ld_impl_linu                  
-                    x-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.36</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-hea4e1c9_2                                                   
-                      lerc                                                                   
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::lerc-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.0</span>-h9c3ff4c_0                                
-                      libblas                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libblas-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.9</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-8_openblas                           
-                      libcblas                                                               
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libcblas-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.9</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-8_openblas                          
-                      libcurl                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libcurl-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.76</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-hc4aaa36_1                          
-                      libdeflate                                                             
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libdeflate-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.8</span>-h7f98852_0                          
-                      libedit                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libedit-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.1</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">20191231</span>-he28a2e2_2                    
-                      libev                                                                  
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libev-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.33</span>-h516909a_1                              
-                      libffi                                                                 
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libffi-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.4</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span>-h7f98852_5                            
-                      libgcc-devel_linu~ conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libgcc-devel                  
-                    _linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-hda03d7c_19                                              
-                      libgcc-ng                                                              
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libgcc-ng-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">11.2</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h1d223b6_11                       
-                      libgfortran-ng                                                         
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libgfortran-ng-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h14aa051_19                   
-                      libgfortran4                                                           
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libgfortran4-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h14aa051_19                     
-                      libglib                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libglib-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.70</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span>-h174f98d_0                          
-                      libgomp                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libgomp-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">11.2</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h1d223b6_11                         
-                      libiconv                                                               
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libiconv-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.16</span>-h516909a_0                           
-                      liblapack                                                              
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::liblapack-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.9</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-8_openblas                         
-                      libnghttp2                                                             
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libnghttp2-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.43</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h812cca2_1                       
-                      libnsl                                                                 
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libnsl-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h7f98852_0                            
-                      libopenblas        conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libopenblas-                  
-                    <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.3</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">12</span>-pthreads_hb3c22a3_1                                               
-                      libpng                                                                 
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libpng-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.6</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">37</span>-h21135ba_2                           
-                      libssh2                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libssh2-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.10</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-ha56f1ee_2                          
-                      libstdcxx-devel_l~ conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libstdcxx-de                  
-                    vel_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-hb016644_19                                           
-                      libstdcxx-ng                                                           
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libstdcxx-ng-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">11.2</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-he4da1e4_11                    
-                      libtiff                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libtiff-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.3</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h6f004c6_2                           
-                      libuuid                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libuuid-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.32</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-h7f98852_1000                       
-                      libwebp-base                                                           
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libwebp-base-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.2</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-h7f98852_0                      
-                      libxcb                                                                 
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libxcb-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.13</span>-h7f98852_1004                          
-                      libxml2                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libxml2-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.9</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">10</span>-hee79883_0                          
-                      libzlib                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::libzlib-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.2</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">11</span>-h36c2ea0_1013                       
-                      lz4-c                                                                  
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::lz4-c-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.9</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3</span>-h9c3ff4c_1                             
-                      make                                                                   
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::make-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.3</span>-hd18ef5c_1                                
-                      ncurses                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::ncurses-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">6.2</span>-h58526e2_4                             
-                      openssl                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::openssl-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.1</span>.1l-h7f98852_0                          
-                      pango                                                                  
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::pango-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.42</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span>-h7062337_4                            
-                      pcre                                                                   
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::pcre-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">8.45</span>-h9c3ff4c_0                               
-                      pcre2                                                                  
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::pcre2-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">10.34</span>-h2f06484_0                             
-                      pip                                                                    
-                    conda-forge/noarch::pip-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">21.3</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-pyhd8ed1ab_0                              
-                      pixman                                                                 
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::pixman-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.38</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h516909a_1003                        
-                      pthread-stubs                                                          
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::pthread-stubs-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.4</span>-h36c2ea0_1001                    
-                      python                                                                 
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::python-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.10</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-h62f1059_0_cpython                   
-                      python_abi                                                             
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::python_abi-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.10</span>-2_cp310                            
-                      r-base                                                                 
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::r-base-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-hdca8982_3                            
-                      readline                                                               
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::readline-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">8.1</span>-h46c0cb4_0                            
-                      sed                                                                    
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::sed-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.8</span>-he412f7d_0                                 
-                      setuptools                                                             
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::setuptools-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">59.6</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-py310hff52083_0                  
-                      sqlite                                                                 
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::sqlite-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.37</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h9cd32fc_0                           
-                      sysroot_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>                                                       
-                    conda-forge/noarch::sysroot_linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.12</span>-he073ed8_15                    
-                      tk                                                                     
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::tk-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">8.6</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">11</span>-h27826a3_1                               
-                      tktable                                                                
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::tktable-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.10</span>-hb7b940f_3                            
-                      tzdata                                                                 
-                    conda-forge/noarch::tzdata-2021e-he74cb21_0                              
-                      wheel                                                                  
-                    conda-forge/noarch::wheel-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.37</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-pyhd8ed1ab_1                            
-                      xorg-kbproto                                                           
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xorg-kbproto-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7</span>-h7f98852_1002                   
-                      xorg-libice                                                            
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xorg-libice-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">10</span>-h7f98852_0                      
-                      xorg-libsm                                                             
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xorg-libsm-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.2</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3</span>-hd9c2040_1000                     
-                      xorg-libx11                                                            
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xorg-libx11-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.7</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span>-h7f98852_0                       
-                      xorg-libxau                                                            
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xorg-libxau-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">9</span>-h7f98852_0                       
-                      xorg-libxdmcp                                                          
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xorg-libxdmcp-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.1</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3</span>-h7f98852_0                     
-                      xorg-libxext                                                           
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xorg-libxext-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.3</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span>-h7f98852_1                      
-                      xorg-libxrender    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xorg-libxren                  
-                    der-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.9</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">10</span>-h7f98852_1003                                                 
-                      xorg-renderproto   conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xorg-renderp                  
-                    roto-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.11</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>-h7f98852_1002                                                
-                      xorg-xextproto     conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xorg-xextpro                  
-                    to-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.3</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-h7f98852_1002                                                   
-                      xorg-xproto                                                            
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xorg-xproto-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">31</span>-h7f98852_1007                   
-                      xz                                                                     
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::xz-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">5.2</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">5</span>-h516909a_1                                
-                      zlib                                                                   
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::zlib-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.2</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">11</span>-h36c2ea0_1013                          
-                      zstd                                                                   
-                    conda-forge/linux-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">64</span>::zstd-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-ha95c52a_0                              
-                                                                                             
-                                                                                             
-                                                                                             
-                    Downloading and Extracting Packages                                      
-                    _openmp_mutex-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.5</span>    | <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">22</span> KB     |            |   <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>%                     
-                    _openmp_mutex-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.5</span>    | <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">22</span> KB     | ########## | <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">100</span>%                     
-                    _openmp_mutex-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4.5</span>    | <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">22</span> KB     | ########## | <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">100</span>%                     
-                    Preparing transaction: <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                
-                    Verifying transaction: <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                
-                    Executing transaction: <span style="color: #808000; text-decoration-color: #808000">...</span>working<span style="color: #808000; text-decoration-color: #808000">...</span> done                                
-                                                                                             
-</pre>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -1823,7 +1247,7 @@ Please update conda by running
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1854,11 +1278,11 @@ Please update conda by running
 <p>Install the {renv} R package</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1882,74 +1306,12 @@ Please update conda by running
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">           </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run   <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#32"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">32</span></a>
-                    -n eshine --live-stream <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/cond</span>                  
-                    <span style="color: #800080; text-decoration-color: #800080">a_topdir/envs/eshine/lib/R/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">Rscript</span> -e <span style="color: #800080; text-decoration-color: #800080; font-weight: bold">install.packa</span>                  
-                    <span style="color: #800080; text-decoration-color: #800080; font-weight: bold">ges</span><span style="font-weight: bold">(</span><span style="color: #008000; text-decoration-color: #008000">'renv'</span>,<span style="color: #808000; text-decoration-color: #808000">repos</span>=<span style="color: #008000; text-decoration-color: #008000">'https://cran.r-project.org'</span>,<span style="color: #808000; text-decoration-color: #808000">lib</span>=<span style="color: #008000; text-decoration-color: #008000">'/hom</span>                  
-                    <span style="color: #008000; text-decoration-color: #008000">e/chase/Downloads/temp/conda_topdir/envs/eshine/lib/R/l</span>                  
-                    <span style="color: #008000; text-decoration-color: #008000">ibrary'</span><span style="font-weight: bold">)</span>                                                                 
-</pre>
-
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[14:53:36] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span>                                                         <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#34"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">34</span></a>
-</pre>
-
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2021</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">12</span>-18T<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">20:53:36</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">232289</span>      <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run -n 
-eshine --live-stream <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/envs/eshine/lib/R/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">Rscript</span> -e
-<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">install.packages</span><span style="font-weight: bold">(</span><span style="color: #008000; text-decoration-color: #008000">'renv'</span>,<span style="color: #808000; text-decoration-color: #808000">repos</span>=<span style="color: #008000; text-decoration-color: #008000">'https://cran.r-project.org'</span>,<span style="color: #808000; text-decoration-color: #808000">lib</span>=<span style="color: #008000; text-decoration-color: #008000">'/home/chase/Downloads/temp/co</span>
-<span style="color: #008000; text-decoration-color: #008000">nda_topdir/envs/eshine/lib/R/library'</span><span style="font-weight: bold">)</span>
-</pre>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1986,15 +1348,15 @@ eshine --live-stream <span style="color: #800080; text-decoration-color: #800080
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">           </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run   <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#32"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">32</span></a>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[10:59:04] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run   <a href="file:///home/chase/miniconda3/envs/socialgene/lib/python3.9/site-packages/electricpie-0.0.0-py3.9.egg/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:32</span>
                     -n eshine --live-stream <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/cond</span>                  
                     <span style="color: #800080; text-decoration-color: #800080">a_topdir/envs/eshine/lib/R/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">Rscript</span> -e                                
-                    renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">consent</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">provided</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span><span style="font-weight: bold">)</span>; renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">init</span><span style="font-weight: bold">(</span>project =<span style="color: #008000; text-decoration-color: #008000">"/hom</span>                  
-                    <span style="color: #008000; text-decoration-color: #008000">e/chase/Downloads/temp"</span>,<span style="color: #808000; text-decoration-color: #808000">settings</span>=<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">list</span><span style="font-weight: bold">(</span>external.<span style="color: #808000; text-decoration-color: #808000">librarie</span>                  
-                    <span style="color: #808000; text-decoration-color: #808000">s</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloads/temp/conda_topdir/envs/eshine/</span>                  
-                    <span style="color: #008000; text-decoration-color: #008000">lib/R/library"</span>,use.cache =FALSE,vcs.ignore.<span style="color: #808000; text-decoration-color: #808000">library</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span>                  
-                    ,package.dependency.<span style="color: #808000; text-decoration-color: #808000">fields</span>=<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">c</span><span style="font-weight: bold">(</span><span style="color: #008000; text-decoration-color: #008000">"Imports"</span>,<span style="color: #008000; text-decoration-color: #008000">"Depends"</span>,<span style="color: #008000; text-decoration-color: #008000">"Linki</span>                  
-                    <span style="color: #008000; text-decoration-color: #008000">ngTo"</span><span style="font-weight: bold">))</span>,<span style="color: #808000; text-decoration-color: #808000">bare</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span>,<span style="color: #808000; text-decoration-color: #808000">restart</span>=<span style="color: #800080; text-decoration-color: #800080">FALSE</span><span style="font-weight: bold">)</span>                                         
+                    renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">consent</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">provided</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span><span style="font-weight: bold">)</span>; renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">init</span><span style="font-weight: bold">(</span>project =<span style="color: #008000; text-decoration-color: #008000">"None</span>                  
+                    <span style="color: #008000; text-decoration-color: #008000">"</span>,<span style="color: #808000; text-decoration-color: #808000">settings</span>=<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">list</span><span style="font-weight: bold">(</span>external.<span style="color: #808000; text-decoration-color: #808000">libraries</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloa</span>                  
+                    <span style="color: #008000; text-decoration-color: #008000">ds/temp/conda_topdir/envs/eshine/lib/R/library"</span>,use.cac                  
+                    he =FALSE,vcs.ignore.<span style="color: #808000; text-decoration-color: #808000">library</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span>,package.dependency.<span style="color: #808000; text-decoration-color: #808000">fi</span>                  
+                    <span style="color: #808000; text-decoration-color: #808000">elds</span>=<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">c</span><span style="font-weight: bold">(</span><span style="color: #008000; text-decoration-color: #008000">"Imports"</span>,<span style="color: #008000; text-decoration-color: #008000">"Depends"</span>,<span style="color: #008000; text-decoration-color: #008000">"LinkingTo"</span><span style="font-weight: bold">))</span>,<span style="color: #808000; text-decoration-color: #808000">bare</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span>,<span style="color: #808000; text-decoration-color: #808000">rest</span>                  
+                    <span style="color: #808000; text-decoration-color: #808000">art</span>=<span style="color: #800080; text-decoration-color: #800080">FALSE</span><span style="font-weight: bold">)</span>                                                               
 </pre>
 
 </div>
@@ -2009,7 +1371,7 @@ eshine --live-stream <span style="color: #800080; text-decoration-color: #800080
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[14:53:37] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> * Consent to use renv has already been provided --      <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#34"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">34</span></a>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[10:59:05] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> * Consent to use renv has already been provided --      <a href="file:///home/chase/miniconda3/envs/socialgene/lib/python3.9/site-packages/electricpie-0.0.0-py3.9.egg/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:34</span>
                     nothing to do.                                                           
                                                                                              
 </pre>
@@ -2026,12 +1388,12 @@ eshine --live-stream <span style="color: #800080; text-decoration-color: #800080
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2021</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">12</span>-18T<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">20:53:37</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">249669</span>      <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run -n 
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2021</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">12</span>-18T<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">16:59:05</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">493987</span>      <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run -n 
 eshine --live-stream <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/envs/eshine/lib/R/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">Rscript</span> -e
-renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">consent</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">provided</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span><span style="font-weight: bold">)</span>; renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">init</span><span style="font-weight: bold">(</span>project =<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloads/temp"</span>,<span style="color: #808000; text-decoration-color: #808000">settings</span>=<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">list</span><span style="font-weight: bold">(</span>
-external.<span style="color: #808000; text-decoration-color: #808000">libraries</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloads/temp/conda_topdir/envs/eshine/lib/R/library"</span>,use.ca
-che =FALSE,vcs.ignore.<span style="color: #808000; text-decoration-color: #808000">library</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span>,package.dependency.<span style="color: #808000; text-decoration-color: #808000">fields</span>=<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">c</span><span style="font-weight: bold">(</span><span style="color: #008000; text-decoration-color: #008000">"Imports"</span>,<span style="color: #008000; text-decoration-color: #008000">"Depends"</span>,<span style="color: #008000; text-decoration-color: #008000">"LinkingTo</span>
-<span style="color: #008000; text-decoration-color: #008000">"</span><span style="font-weight: bold">))</span>,<span style="color: #808000; text-decoration-color: #808000">bare</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span>,<span style="color: #808000; text-decoration-color: #808000">restart</span>=<span style="color: #800080; text-decoration-color: #800080">FALSE</span><span style="font-weight: bold">)</span>
+renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">consent</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">provided</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span><span style="font-weight: bold">)</span>; renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">init</span><span style="font-weight: bold">(</span>project =<span style="color: #008000; text-decoration-color: #008000">"None"</span>,<span style="color: #808000; text-decoration-color: #808000">settings</span>=<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">list</span><span style="font-weight: bold">(</span>external.<span style="color: #808000; text-decoration-color: #808000">libraries</span>=<span style="color: #008000; text-decoration-color: #008000">"/h</span>
+<span style="color: #008000; text-decoration-color: #008000">ome/chase/Downloads/temp/conda_topdir/envs/eshine/lib/R/library"</span>,use.cache =FALSE,vcs.ignore.
+<span style="color: #808000; text-decoration-color: #808000">library</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span>,package.dependency.<span style="color: #808000; text-decoration-color: #808000">fields</span>=<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">c</span><span style="font-weight: bold">(</span><span style="color: #008000; text-decoration-color: #008000">"Imports"</span>,<span style="color: #008000; text-decoration-color: #008000">"Depends"</span>,<span style="color: #008000; text-decoration-color: #008000">"LinkingTo"</span><span style="font-weight: bold">))</span>,<span style="color: #808000; text-decoration-color: #808000">bare</span>=<span style="color: #800080; text-decoration-color: #800080">TRUE</span>,<span style="color: #808000; text-decoration-color: #808000">restart</span>=
+<span style="color: #800080; text-decoration-color: #800080">FALSE</span><span style="font-weight: bold">)</span>
 </pre>
 
 </div>
@@ -2053,7 +1415,7 @@ che =FALSE,vcs.ignore.<span style="color: #808000; text-decoration-color: #80800
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -2088,15 +1450,113 @@ che =FALSE,vcs.ignore.<span style="color: #808000; text-decoration-color: #80800
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_431803/275559433.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>my_object<span class="ansi-blue-fg">.</span>install_r_package_With_renv<span class="ansi-blue-fg">(</span>env_name<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#34;eshine&#34;</span><span class="ansi-blue-fg">,</span> package<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#34;chasemc/demoapp&#34;</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-red-fg">AttributeError</span>: &#39;Electricpie&#39; object has no attribute &#39;install_r_package_With_renv&#39;</pre>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[10:59:19] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run   <a href="file:///home/chase/miniconda3/envs/socialgene/lib/python3.9/site-packages/electricpie-0.0.0-py3.9.egg/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:32</span>
+                    -n eshine --live-stream <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/cond</span>                  
+                    <span style="color: #800080; text-decoration-color: #800080">a_topdir/envs/eshine/lib/R/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">Rscript</span> -e                                
+                    renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">install</span><span style="font-weight: bold">(</span><span style="color: #008000; text-decoration-color: #008000">'chasemc/demoapp'</span>, repos =                                 
+                    <span style="color: #008000; text-decoration-color: #008000">'https://cran.r-project.org'</span>, lib = <span style="color: #008000; text-decoration-color: #008000">'/home/chase/Downlo</span>                  
+                    <span style="color: #008000; text-decoration-color: #008000">ads/temp/conda_topdir/envs/eshine/lib/R/library'</span>, force                  
+                    = FALSE, <span style="color: #808000; text-decoration-color: #808000">project</span>= <span style="color: #008000; text-decoration-color: #008000">'None'</span><span style="font-weight: bold">)</span>                                                
+</pre>
+
 </div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[10:59:22] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> Installing Rcpp <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                             <a href="file:///home/chase/miniconda3/envs/socialgene/lib/python3.9/site-packages/electricpie-0.0.0-py3.9.egg/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:34</span>
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing R6 <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                                
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing rlang <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.4</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">12</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                            
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing later <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.3</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                             
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing magrittr <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                          
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing promises <span style="font-weight: bold">[</span><span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">1.2.0.1</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                        
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing httpuv <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.6</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                            
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing mime <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.12</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                               
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing jsonlite <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.7</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                          
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing xtable <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.8</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                            
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing digest <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.6</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">29</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                           
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing base64enc <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.1</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                         
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing fastmap <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.1</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                           
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing htmltools <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                         
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing fontawesome <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.2</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                       
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing sourcetools <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.1</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                       
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing crayon <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.4</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                            
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing withr <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2.4</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                             
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing commonmark <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.7</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                          
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing glue <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.6</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                              
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing fs <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.5</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                                
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing rappdirs <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.3</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                          
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing sass <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.4</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                              
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing jquerylib <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.1</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                         
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing bslib <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.3</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                             
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing cachem <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">6</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                            
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing ellipsis <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.3</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                          
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing lifecycle <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                         
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing shiny <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.7</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                             
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                    Installing demoApp <span style="font-weight: bold">[</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1.0</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">19</span><span style="font-weight: bold">]</span> <span style="color: #808000; text-decoration-color: #808000">...</span>                                          
+                            OK <span style="font-weight: bold">[</span>copied cache<span style="font-weight: bold">]</span>                                                
+                                                                                             
+</pre>
+
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2021</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">12</span>-18T<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">16:59:22</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">108701</span>      <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run -n 
+eshine --live-stream <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/envs/eshine/lib/R/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">Rscript</span> -e
+renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">install</span><span style="font-weight: bold">(</span><span style="color: #008000; text-decoration-color: #008000">'chasemc/demoapp'</span>, repos = <span style="color: #008000; text-decoration-color: #008000">'https://cran.r-project.org'</span>, lib = 
+<span style="color: #008000; text-decoration-color: #008000">'/home/chase/Downloads/temp/conda_topdir/envs/eshine/lib/R/library'</span>, force = FALSE, <span style="color: #808000; text-decoration-color: #808000">project</span>= 
+<span style="color: #008000; text-decoration-color: #008000">'None'</span><span style="font-weight: bold">)</span>
+</pre>
+
+</div>
+
 </div>
 
 </div>
@@ -2113,7 +1573,7 @@ che =FALSE,vcs.ignore.<span style="color: #808000; text-decoration-color: #80800
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="install-all-dependencies-on-user-side">Install all dependencies on user-side<a class="anchor-link" href="#install-all-dependencies-on-user-side">&#182;</a></h1>
+<h2 id="install-all-dependencies-on-user-side">Install all dependencies on user-side<a class="anchor-link" href="#install-all-dependencies-on-user-side">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -2125,7 +1585,7 @@ che =FALSE,vcs.ignore.<span style="color: #808000; text-decoration-color: #80800
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -2164,7 +1624,7 @@ my_object.renv_snap(env_name="eshine")</div>
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">           </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> env   <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#32"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">32</span></a>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[10:59:38] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> env   <a href="file:///home/chase/miniconda3/envs/socialgene/lib/python3.9/site-packages/electricpie-0.0.0-py3.9.egg/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:32</span>
                     export -n eshine &gt;                                                       
                     <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda_dependencies.yml</span>                        
 </pre>
@@ -2181,7 +1641,7 @@ my_object.renv_snap(env_name="eshine")</div>
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">           </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span>                                                         <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#34"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">34</span></a>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">           </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span>                                                         <a href="file:///home/chase/miniconda3/envs/socialgene/lib/python3.9/site-packages/electricpie-0.0.0-py3.9.egg/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:34</span>
 </pre>
 
 </div>
@@ -2196,14 +1656,13 @@ my_object.renv_snap(env_name="eshine")</div>
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">           </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run   <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#32"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">32</span></a>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">           </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run   <a href="file:///home/chase/miniconda3/envs/socialgene/lib/python3.9/site-packages/electricpie-0.0.0-py3.9.egg/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:32</span>
                     -n eshine --live-stream <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/cond</span>                  
                     <span style="color: #800080; text-decoration-color: #800080">a_topdir/envs/eshine/lib/R/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">Rscript</span> -e renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">snapsho</span>                  
-                    <span style="color: #800080; text-decoration-color: #800080; font-weight: bold">t</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">project</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloads/temp"</span>,<span style="color: #808000; text-decoration-color: #808000">library</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/c</span>                  
-                    <span style="color: #008000; text-decoration-color: #008000">hase/Downloads/temp/conda_topdir/envs/eshine/lib/R/libr</span>                  
-                    <span style="color: #008000; text-decoration-color: #008000">ary"</span>,<span style="color: #808000; text-decoration-color: #808000">lockfile</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloads/temp/renv_dependen</span>                  
-                    <span style="color: #008000; text-decoration-color: #008000">cies.lock"</span>,<span style="color: #808000; text-decoration-color: #808000">packages</span>=<span style="color: #800080; text-decoration-color: #800080">NULL</span>,<span style="color: #808000; text-decoration-color: #808000">type</span>=<span style="color: #008000; text-decoration-color: #008000">"all"</span>,<span style="color: #808000; text-decoration-color: #808000">prompt</span>=<span style="color: #800080; text-decoration-color: #800080">FALSE</span>,<span style="color: #808000; text-decoration-color: #808000">force</span>=                  
-                    <span style="color: #800080; text-decoration-color: #800080">FALSE</span><span style="font-weight: bold">)</span>                                                                   
+                    <span style="color: #800080; text-decoration-color: #800080; font-weight: bold">t</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">project</span>=<span style="color: #008000; text-decoration-color: #008000">"None"</span>,<span style="color: #808000; text-decoration-color: #808000">library</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloads/temp/co</span>                  
+                    <span style="color: #008000; text-decoration-color: #008000">nda_topdir/envs/eshine/lib/R/library"</span>,<span style="color: #808000; text-decoration-color: #808000">lockfile</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/c</span>                  
+                    <span style="color: #008000; text-decoration-color: #008000">hase/Downloads/temp/renv_dependencies.lock"</span>,<span style="color: #808000; text-decoration-color: #808000">packages</span>=<span style="color: #800080; text-decoration-color: #800080">NU</span>                  
+                    <span style="color: #800080; text-decoration-color: #800080">LL</span>,<span style="color: #808000; text-decoration-color: #808000">type</span>=<span style="color: #008000; text-decoration-color: #008000">"all"</span>,<span style="color: #808000; text-decoration-color: #808000">prompt</span>=<span style="color: #800080; text-decoration-color: #800080">FALSE</span>,<span style="color: #808000; text-decoration-color: #808000">force</span>=<span style="color: #800080; text-decoration-color: #800080">FALSE</span><span style="font-weight: bold">)</span>                                  
 </pre>
 
 </div>
@@ -2216,9 +1675,22 @@ my_object.renv_snap(env_name="eshine")</div>
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>The following package(s) will be updated in the lockfile:
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[14:53:38] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> * The lockfile is already up to date.                   <a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///home/chase/Documents/electricpie/src/electricpie/utils/run_command.py#34"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">34</span></a>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[10:59:39] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> * Lockfile written to                                   <a href="file:///home/chase/miniconda3/envs/socialgene/lib/python3.9/site-packages/electricpie-0.0.0-py3.9.egg/electricpie/utils/run_command.py"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">run_command.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:34</span>
+                    <span style="color: #008000; text-decoration-color: #008000">'~/Downloads/temp/renv_dependencies.lock'</span>.                               
                                                                                              
 </pre>
 
@@ -2234,11 +1706,11 @@ my_object.renv_snap(env_name="eshine")</div>
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2021</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">12</span>-18T<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">20:53:38</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">862330</span>      <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run -n 
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2021</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">12</span>-18T<span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">16:59:39</span>.<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">691046</span>      <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">conda</span> run -n 
 eshine --live-stream <span style="color: #800080; text-decoration-color: #800080">/home/chase/Downloads/temp/conda_topdir/envs/eshine/lib/R/bin/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">Rscript</span> -e
-renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">snapshot</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">project</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloads/temp"</span>,<span style="color: #808000; text-decoration-color: #808000">library</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloads/temp/conda</span>
-<span style="color: #008000; text-decoration-color: #008000">_topdir/envs/eshine/lib/R/library"</span>,<span style="color: #808000; text-decoration-color: #808000">lockfile</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloads/temp/renv_dependencies.loc</span>
-<span style="color: #008000; text-decoration-color: #008000">k"</span>,<span style="color: #808000; text-decoration-color: #808000">packages</span>=<span style="color: #800080; text-decoration-color: #800080">NULL</span>,<span style="color: #808000; text-decoration-color: #808000">type</span>=<span style="color: #008000; text-decoration-color: #008000">"all"</span>,<span style="color: #808000; text-decoration-color: #808000">prompt</span>=<span style="color: #800080; text-decoration-color: #800080">FALSE</span>,<span style="color: #808000; text-decoration-color: #808000">force</span>=<span style="color: #800080; text-decoration-color: #800080">FALSE</span><span style="font-weight: bold">)</span>
+renv::<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">snapshot</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">project</span>=<span style="color: #008000; text-decoration-color: #008000">"None"</span>,<span style="color: #808000; text-decoration-color: #808000">library</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloads/temp/conda_topdir/envs/eshine/li</span>
+<span style="color: #008000; text-decoration-color: #008000">b/R/library"</span>,<span style="color: #808000; text-decoration-color: #808000">lockfile</span>=<span style="color: #008000; text-decoration-color: #008000">"/home/chase/Downloads/temp/renv_dependencies.lock"</span>,<span style="color: #808000; text-decoration-color: #808000">packages</span>=<span style="color: #800080; text-decoration-color: #800080">NULL</span>,<span style="color: #808000; text-decoration-color: #808000">type</span>=
+<span style="color: #008000; text-decoration-color: #008000">"all"</span>,<span style="color: #808000; text-decoration-color: #808000">prompt</span>=<span style="color: #800080; text-decoration-color: #800080">FALSE</span>,<span style="color: #808000; text-decoration-color: #808000">force</span>=<span style="color: #800080; text-decoration-color: #800080">FALSE</span><span style="font-weight: bold">)</span>
 </pre>
 
 </div>
