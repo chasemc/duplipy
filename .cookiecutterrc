@@ -1,0 +1,72 @@
+# This file exists so you can easily regenerate your project.
+#
+# `cookiepatcher` is a convenient shim around `cookiecutter`
+# for regenerating projects (it will generate a .cookiecutterrc
+# automatically for any template). To use it:
+#
+#    pip install cookiepatcher
+#    cookiepatcher gh:ionelmc/cookiecutter-pylibrary electricpie
+#
+# See:
+#    https://pypi.org/project/cookiepatcher
+#
+# Alternatively, you can run:
+#
+#    cookiecutter --overwrite-if-exists --config-file=electricpie/.cookiecutterrc gh:ionelmc/cookiecutter-pylibrary
+
+default_context:
+
+    _extensions:               ['jinja2_time.TimeExtension']
+    _template:                 'gh:ionelmc/cookiecutter-pylibrary'
+    allow_tests_inside_package: 'yes'
+    appveyor:                  'no'
+    c_extension_function:      'longest'
+    c_extension_module:        '_electricpie'
+    c_extension_optional:      'no'
+    c_extension_support:       'no'
+    c_extension_test_pypi:     'no'
+    c_extension_test_pypi_username: 'chasemc'
+    codacy:                    'no'
+    codacy_projectid:          '[Get ID from https://app.codacy.com/gh/chasemc/electricpie/settings]'
+    codeclimate:               'no'
+    codecov:                   'yes'
+    command_line_interface:    'argparse'
+    command_line_interface_bin_name: 'electricpie'
+    coveralls:                 'no'
+    distribution_name:         'electricpie'
+    email:                     'chasingmicrobes@gmail.com'
+    full_name:                 'Chase M Clark'
+    github_actions:            'yes'
+    legacy_python:             'no'
+    license:                   'MIT license'
+    linter:                    'flake8'
+    package_name:              'electricpie'
+    pre_commit:                'yes'
+    project_name:              'electricpie'
+    project_short_description: 'Create standalone, installable R Shiny apps using Electron'
+    pypi_badge:                'yes'
+    pypi_disable_upload:       'no'
+    release_date:              'today'
+    repo_hosting:              'github.com'
+    repo_hosting_domain:       'github.com'
+    repo_main_branch:          'main'
+    repo_name:                 'electricpie'
+    repo_username:             'chasemc'
+    requiresio:                'no'
+    scrutinizer:               'no'
+    setup_py_uses_setuptools_scm: 'no'
+    setup_py_uses_test_runner: 'yes'
+    sphinx_docs:               'no'
+    sphinx_docs_hosting:       'https://electricpie.readthedocs.io/'
+    sphinx_doctest:            'no'
+    sphinx_theme:              'sphinx-rtd-theme'
+    test_matrix_configurator:  'yes'
+    test_matrix_separate_coverage: 'no'
+    test_runner:               'pytest'
+    travis:                    'no'
+    travis_osx:                'no'
+    version:                   '0.0.0'
+    version_manager:           'bump2version'
+    website:                   'https://chasemc.github.io/'
+    year_from:                 '2021'
+    year_to:                   '2021'
