@@ -1,0 +1,9 @@
+external.libraries:
+    /home/chase/Downloads/temp/conda_topdir/envs/eshine/lib/R/library
+ignored.packages:
+package.dependency.fields: Imports, Depends, LinkingTo
+r.version:
+snapshot.type: implicit
+use.cache: FALSE
+vcs.ignore.library: TRUE
+vcs.ignore.local: TRUE
