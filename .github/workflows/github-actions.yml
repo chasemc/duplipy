@@ -17,7 +17,7 @@ jobs:
         run: |
           make install
           coverage erase
-          pytest --cov-report term --cov=electricpie tests/ --cov-report=xml
+          pytest --cov-report term --cov=./src tests/ --cov-report=xml
           coverage xml
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
