@@ -5,7 +5,7 @@ WARNING
 This is still very much a work in progress and nothing can be assumed stable in any way
 
 
-Temp notes
+Temp notes:
 
 Two types of created installer, based on whether it contains:
 
