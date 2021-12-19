@@ -13,6 +13,14 @@ class OperatingSystem:
         self,
         this_operating_system: str = platform,  # make temppath default
     ):
+        """Define the current operating system
+
+        Args:
+            this_operating_system (str, optional): Defaults to platform.
+
+        Raises:
+            ValueError: [description]
+        """
         super().__init__()
         if this_operating_system in supported_os:
             response = this_operating_system

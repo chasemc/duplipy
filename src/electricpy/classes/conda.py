@@ -8,13 +8,14 @@ from shlex import quote
 from typing import List
 
 from packaging import version
+
 # external dependencies
 from rich import inspect
 from rich import print
 
 # internal dependencies
 from electricpy.classes.operating_system import OperatingSystem
-from electricpy.classes.paths_setup import WorkingDir
+from electricpy.classes.workingdir import WorkingDir
 from electricpy.utils.downloader import download
 from electricpy.utils.run_command import run_command
 
@@ -23,12 +24,15 @@ class Conda(WorkingDir, OperatingSystem):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.conda_installer_script_path = None
-        self.conda_topdir = None
         self.conda_executable = None
+        self.conda_topdir = str(Path(self.workdir, "conda_topdir"))
+        self.build_environment = "build"
 
-    def reload_dir(self):
-        self.workdir
-
+    def _check_env(self, input):
+        if isinstance(input, type(None)):
+            return self.build_environment
+        else:
+            return input
 
     def download_miniconda3(
         self,
@@ -76,8 +80,6 @@ class Conda(WorkingDir, OperatingSystem):
         os.chmod(str(self.conda_installer_script_path), 0o755)
 
     def install_miniconda(self):
-
-        self.conda_topdir = Path(self.workdir, "conda_topdir")
         if not Path(self.conda_topdir).exists():
             os.makedirs(self.conda_topdir)
 
@@ -107,7 +109,8 @@ class Conda(WorkingDir, OperatingSystem):
         """
         return str(Path(self.conda_topdir, "bin", "conda"))
 
-    def conda_install(self, env_name, package, repo):
+    def conda_install(self, package, repo, env_name=None):
+        env_name = self._check_env(env_name)
         conda_exec = Path(self.conda_topdir, "bin", "conda")
         run_command(
             [
@@ -122,12 +125,26 @@ class Conda(WorkingDir, OperatingSystem):
             ]
         )
 
+    def install_r(self, r_version, env_name=None):
+        env_name = self._check_env(env_name)
+        semver = version.parse(r_version)
+        semver = ".".join(
+            [
+                str(semver.major),
+                str(semver.minor),
+                str(semver.micro),
+            ]
+        )
+        r_and_semver = "".join([str("r-base="), semver])
+        self.conda_install(env_name=env_name, package=r_and_semver, repo="conda-forge")
+
     def install_r_package(
         self,
-        env_name,
         r_package_name,
         r_package_repo: str = "https://cran.r-project.org",
+        env_name=None,
     ):
+        env_name = self._check_env(env_name)
         rscript_path = str(
             Path(self.conda_topdir, "envs", env_name, "lib", "R", "bin", "Rscript")
         )
@@ -160,11 +177,11 @@ class Conda(WorkingDir, OperatingSystem):
 
     def install_r_package_with_renv(
         self,
-        env_name,
         package="chasemc/demoapp",
         dependencies_repo="https://cran.r-project.org",
+        env_name=None,
     ):
-
+        env_name = self._check_env(env_name)
         r_lib = str(Path(self.conda_topdir, "envs", env_name, "lib", "R", "library"))
 
         remotes_install = "".join(
@@ -192,7 +209,8 @@ class Conda(WorkingDir, OperatingSystem):
             conda_executable=self.conda_executable, command=command_list
         )
 
-    def renv_init(self, env_name):
+    def renv_init(self, env_name=None):
+        env_name = self._check_env(env_name)
         rscript_path = str(
             Path(self.conda_topdir, "envs", env_name, "lib", "R", "bin", "Rscript")
         )
@@ -207,7 +225,8 @@ class Conda(WorkingDir, OperatingSystem):
             conda_executable=self.conda_executable, command=command_list
         )
 
-    def renv_snap(self, env_name):
+    def renv_snap(self, env_name=None):
+        env_name = self._check_env(env_name)
         rscript_path = str(
             Path(self.conda_topdir, "envs", env_name, "lib", "R", "bin", "Rscript")
         )
@@ -222,7 +241,8 @@ class Conda(WorkingDir, OperatingSystem):
             conda_executable=self.conda_executable, command=command_list
         )
 
-    def export_env(self, env_name):
+    def export_env(self, env_name=None):
+        env_name = self._check_env(env_name)
         outpath = Path(self.workdir, "conda_dependencies.yml")
         command = "".join(
             [
