@@ -12,7 +12,7 @@ class electricpy(CondaEnvs):
         super().__init__(*args, **kwargs)
         self.renv_project_directory = self.workdir
 
-    def is_workdir_empty(self):
+    def _is_workdir_empty(self):
         if any(Path(self.workdir).iterdir()):
             return False
         else:
@@ -27,7 +27,7 @@ class electricpy(CondaEnvs):
 
     def _attempt_reuse(self):
         # if provided workdir isn't empty, check if it contains conda...
-        if self._check_if_workdir_is_empty():
+        if self._is_workdir_empty():
             if self._check_for_conda_exec():
                 self.conda_executable = str(Path(self.get_conda_executable()))
                 return True

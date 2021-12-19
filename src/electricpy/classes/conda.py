@@ -199,7 +199,7 @@ class Conda(WorkingDir, OperatingSystem):
                 ")",
             ]
         )
-        remotes_install = quote(remotes_install)
+        # remotes_install = quote(remotes_install)
         rscript_path = str(
             Path(self.conda_topdir, "envs", env_name, "lib", "R", "bin", "Rscript")
         )
