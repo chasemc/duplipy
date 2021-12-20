@@ -21,10 +21,10 @@ for line in sys.stdin:
 endef
 export PRINT_HELP_PYSCRIPT
 
-BROWSER := python -c "$$BROWSER_PYSCRIPT"
+BROWSER := python3 -c "$$BROWSER_PYSCRIPT"
 
 help:
-	@python -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
+	@python3 -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
 
 clean: clean-build clean-pyc clean-test ## remove all build, test, coverage and Python artifacts
 
@@ -48,9 +48,9 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr .pytest_cache
 
 lint/flake8: ## check style with flake8
-	flake8 electricpy tests
+	flake8 duplipy tests
 lint/black: ## check style with black
-	black --check electricpy tests
+	black --check duplipy tests
 
 lint: lint/flake8 lint/black ## check style
 
@@ -61,7 +61,7 @@ test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run --source electricpy -m pytest
+	coverage run --source duplipy -m pytest
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
@@ -76,9 +76,9 @@ release: dist ## package and upload a release
 	twine upload dist/*
 
 dist: clean ## builds source and wheel package
-	python setup.py sdist
-	python setup.py bdist_wheel
+	python3 setup.py sdist
+	python3 setup.py bdist_wheel
 	ls -l dist
 
-install: clean ## install the package to the active Python's site-packages
-	python setup.py install
+install: clean ## install the package to the active python3's site-packages
+	python3 setup.py install

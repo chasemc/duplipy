@@ -1,17 +1,17 @@
 
 ## Get Started!
 
-Ready to contribute? Here's how to set up `electricpy` for local development.
+Ready to contribute? Here's how to set up `duplipy` for local development.
 
-1. Fork the `electricpy` repo on GitHub.
+1. Fork the `duplipy` repo on GitHub.
 2. Clone your fork locally::
 
-    `git clone git@github.com:your_name_here/electricpy.git`
+    `git clone git@github.com:your_name_here/duplipy.git`
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    `mkvirtualenv electricpy`
-    `cd electricpy/`
+    `mkvirtualenv duplipy`
+    `cd duplipy/`
     `python setup.py develop`
 
 4. Create a branch for local development::
@@ -23,7 +23,7 @@ Ready to contribute? Here's how to set up `electricpy` for local development.
 5. When you're done making changes, check that your changes pass flake8 and the
    tests, including testing other Python versions with tox::
 
-    `flake8 electricpy tests`
+    `flake8 duplipy tests`
     `python setup.py test or pytest`
     `tox`
 

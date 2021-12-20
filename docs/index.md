@@ -1,1 +1,1 @@
-# electricpy Documentation
+# duplipy Documentation

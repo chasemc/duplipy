@@ -30,33 +30,33 @@ Overview
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
 
-.. |github-actions| image:: https://github.com/chasemc/electricpy/actions/workflows/github-actions.yml/badge.svg
+.. |github-actions| image:: https://github.com/chasemc/duplipy/actions/workflows/github-actions.yml/badge.svg
     :alt: GitHub Actions Build Status
-    :target: https://github.com/chasemc/electricpy/actions
+    :target: https://github.com/chasemc/duplipy/actions
 
-.. |codecov| image:: https://codecov.io/gh/chasemc/electricpy/branch/main/graphs/badge.svg?branch=main
+.. |codecov| image:: https://codecov.io/gh/chasemc/duplipy/branch/main/graphs/badge.svg?branch=main
     :alt: Coverage Status
-    :target: https://codecov.io/github/chasemc/electricpy
+    :target: https://codecov.io/github/chasemc/duplipy
 
-.. |version| image:: https://img.shields.io/pypi/v/electricpy.svg
+.. |version| image:: https://img.shields.io/pypi/v/duplipy.svg
     :alt: PyPI Package latest release
-    :target: https://pypi.org/project/electricpy
+    :target: https://pypi.org/project/duplipy
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/electricpy.svg
+.. |wheel| image:: https://img.shields.io/pypi/wheel/duplipy.svg
     :alt: PyPI Wheel
-    :target: https://pypi.org/project/electricpy
+    :target: https://pypi.org/project/duplipy
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/electricpy.svg
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/duplipy.svg
     :alt: Supported versions
-    :target: https://pypi.org/project/electricpy
+    :target: https://pypi.org/project/duplipy
 
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/electricpy.svg
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/duplipy.svg
     :alt: Supported implementations
-    :target: https://pypi.org/project/electricpy
+    :target: https://pypi.org/project/duplipy
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/chasemc/electricpy/v0.0.0.svg
+.. |commits-since| image:: https://img.shields.io/github/commits-since/chasemc/duplipy/v0.0.0.svg
     :alt: Commits since latest release
-    :target: https://github.com/chasemc/electricpy/compare/v0.0.0...main
+    :target: https://github.com/chasemc/duplipy/compare/v0.0.0...main
 
 
 
@@ -71,11 +71,11 @@ Installation
 
 ::
 
-    pip install electricpy
+    pip install duplipy
 
 You can also install the in-development version with::
 
-    pip install https://github.com/chasemc/electricpy/archive/main.zip
+    pip install https://github.com/chasemc/duplipy/archive/main.zip
 
 
 Documentation
@@ -86,8 +86,8 @@ To use the project:
 
 .. code-block:: python
 
-    import electricpy
-    electricpy.longest()
+    import duplipy
+    duplipy.longest()
 
 
 Development

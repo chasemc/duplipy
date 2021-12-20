@@ -3,11 +3,11 @@ from shlex import quote
 
 from packaging import version
 
-from electricpy.classes.conda import CondaEnvs
-from electricpy.utils.logging_handler import log
+from duplipy.classes.conda import CondaEnvs
+from duplipy.utils.logging_handler import log
 
 
-class electricpy(CondaEnvs):
+class Duplipy(CondaEnvs):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.renv_project_directory = self.workdir

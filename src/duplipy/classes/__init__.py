@@ -1,4 +1,4 @@
-"""Top-level package for electricpy."""
+"""Top-level package for duplipy."""
 
 __author__ = """Chase M Clark"""
 __email__ = "chasingmicrobes@gmail.com"

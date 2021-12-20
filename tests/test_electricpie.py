@@ -1,5 +1,5 @@
 
-from electricpy.cli import main
+from duplipy.cli import main
 
 
 def test_main():

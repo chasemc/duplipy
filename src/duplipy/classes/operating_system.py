@@ -3,7 +3,7 @@ from sys import platform
 from typing import List
 
 # internal dependencies
-from electricpy.utils.logging_handler import log
+from duplipy.utils.logging_handler import log
 
 supported_os = ["linux", "linux2", "darwin", "win32"]
 

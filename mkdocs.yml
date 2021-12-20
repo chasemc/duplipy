@@ -1,5 +1,5 @@
-site_name: electricpy Documentation
-site_url: https://chasemc.github.io/electricpy
+site_name: duplipy Documentation
+site_url: https://chasemc.github.io/duplipy
 nav:
   - Home: README.md
   - "User Guide":

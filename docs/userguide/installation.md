@@ -3,13 +3,13 @@
 
 ## Stable release
 
-To install electricpy, run this command in your terminal:
+To install duplipy, run this command in your terminal:
 
 ```{bash}
-pip install electricpy
+pip install duplipy
 ```
 
-This is the preferred method to install electricpy, as it will always install the most recent stable release.
+This is the preferred method to install duplipy, as it will always install the most recent stable release.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -21,19 +21,19 @@ you through the process.
 ## From sources
 
 
-The sources for electricpy can be downloaded from the [Github repo](https://github.com/chasemc/electricpy).
+The sources for duplipy can be downloaded from the [Github repo](https://github.com/chasemc/duplipy).
 
 You can either clone the public repository:
 
 ```{bash}
-git clone git://github.com/chasemc/electricpy
+git clone git://github.com/chasemc/duplipy
 ```
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl -OJL https://github.com/chasemc/electricpy/tarball/master
+    $ curl -OJL https://github.com/chasemc/duplipy/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -41,5 +41,5 @@ Once you have a copy of the source, you can install it with:
 python setup.py install
 ```
 
-[Github repo](https://github.com/chasemc/electricpy)
-[tarball](https://github.com/chasemc/electricpy/tarball/master)
+[Github repo](https://github.com/chasemc/duplipy)
+[tarball](https://github.com/chasemc/duplipy/tarball/master)

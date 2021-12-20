@@ -22,7 +22,7 @@ def read(*names, **kwargs):
 
 
 setup(
-    name='electricpy',
+    name='duplipy',
     version='0.0.0',
     license='MIT',
     description='Create standalone, installable R Shiny apps using Electron',
@@ -32,7 +32,7 @@ setup(
     ),
     author='Chase M Clark',
     author_email='chasingmicrobes@gmail.com',
-    url='https://github.com/chasemc/electricpy',
+    url='https://github.com/chasemc/duplipy',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -63,8 +63,8 @@ setup(
         'Topic :: Utilities',
     ],
     project_urls={
-        'Changelog': 'https://github.com/chasemc/electricpy/blob/master/CHANGELOG.rst',
-        'Issue Tracker': 'https://github.com/chasemc/electricpy/issues',
+        'Changelog': 'https://github.com/chasemc/duplipy/blob/master/CHANGELOG.rst',
+        'Issue Tracker': 'https://github.com/chasemc/duplipy/issues',
     },
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',
@@ -84,7 +84,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'electricpy = electricpy.cli:main',
+            'duplipy = duplipy.cli:main',
         ]
     },
 )

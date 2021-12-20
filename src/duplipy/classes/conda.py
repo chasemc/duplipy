@@ -14,10 +14,10 @@ from rich import inspect
 from rich import print
 
 # internal dependencies
-from electricpy.classes.operating_system import OperatingSystem
-from electricpy.classes.workingdir import WorkingDir
-from electricpy.utils.downloader import download
-from electricpy.utils.run_command import run_command
+from duplipy.classes.operating_system import OperatingSystem
+from duplipy.classes.workingdir import WorkingDir
+from duplipy.utils.downloader import download
+from duplipy.utils.run_command import run_command
 
 
 class Conda(WorkingDir, OperatingSystem):

@@ -1,7 +1,8 @@
 from rich import inspect
-from electricpy.classes.electricpy import electricpy
+from duplipy.classes.duplipy import Duplipy
 
-my_object = electricpy(workdir="/home/chase/Downloads/temp")
+my_object = Duplipy(workdir='/Users/chase/Downloads/temp')
+
 
 inspect(my_object)
 
