@@ -8,9 +8,10 @@ from duplipy.utils.logging_handler import log
 
 
 class Duplipy(CondaEnvs):
-    def __init__(self, *args, **kwargs):
+    def __init__(self, user_app_path: str = "chasemc/demoapp", *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.renv_project_directory = self.workdir
+        self.user_app_path = user_app_path
 
     def _is_workdir_empty(self):
         if any(Path(self.workdir).iterdir()):
@@ -45,6 +46,6 @@ class Duplipy(CondaEnvs):
         self.install_r(r_version="4.0.0")
         self.install_r_package(r_package_name="renv")
         self.renv_init()
-        self.install_r_package_with_renv(package="chasemc/demoapp")
+        self.install_r_package_with_renv(package=self.user_app_path)
         self.export_env()
         self.renv_snap()
