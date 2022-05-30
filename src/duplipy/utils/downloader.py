@@ -66,7 +66,7 @@ signal.signal(signal.SIGINT, handle_sigint)
 def copy_url(task_id: TaskID, url: str, path: str) -> None:
     """Copy data from a url to a local file."""
     progress.console.log(f"Requesting {url}")
-    response = urlopen(url, allow_redirects=True)
+    response = urlopen(url)
     # This will break if the response doesn't contain content length
     progress.update(task_id, total=int(response.info()["Content-length"]))
     with open(path, "wb") as dest_file:

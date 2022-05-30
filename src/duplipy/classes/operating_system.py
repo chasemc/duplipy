@@ -1,17 +1,15 @@
 # python dependencies
-from sys import platform
+import platform
 from typing import List
+
 
 # internal dependencies
 from duplipy.utils.logging_handler import log
 
-supported_os = ["linux", "linux2", "darwin", "win32"]
-
-
 class OperatingSystem:
     def __init__(
         self,
-        this_operating_system: str = platform,  # make temppath default
+        verbose=False
     ):
         """Define the current operating system
 
@@ -21,20 +19,18 @@ class OperatingSystem:
         Raises:
             ValueError: [description]
         """
-        super().__init__()
-        if this_operating_system in supported_os:
-            response = this_operating_system
-        else:
+        self.this_operating_system = {"Darwin": 'osx', "Linux": 'linux', "Windows": 'win' }[platform.system()]
+        self.this_machine = platform.machine()
+        if not self.this_operating_system:
             message = "".join(
                 [
-                    "Operating system found: '",
-                    str(this_operating_system),
-                    "'. Must be one of: ",
-                    ", ".join(supported_os),
+                    "Operating system not supported: '",
+                    str(platform.system())
                 ]
             )
             log.error(message)
             raise ValueError(message)
+        if verbose:
+            log.info("".join(["Operating system: ", self.this_operating_system]))
+            log.info("".join(["Machine: ", self.this_machine]))
 
-        log.info("".join(["Operating system: ", response]))
-        self.this_operating_system = response
